@@ -19,3 +19,13 @@
     - 21.12.02
         : gitHub 기준, private Repository에 밤날 커밋한들, 내 자신 외에 타인이 내가 커밋을 했는지 안했는지 알 수가 없다. 
           내 계정으로는 잔디밭이 추가된것 처럼 보이는데, 로그아웃하고 내 계정을 조회해보니 잔디밭이 없어져있다.. 
+
+
+## IDE
+    
+### IntelliJ 
+    - 21.12.02
+       : Inline Variable 단축키 : 컨트롤 + 알트 + N
+         (ex) 
+         MyView myView = new MyView("/WEB-INF/views/new-form.jsp");  return myView;
+            -> return new MyView("/WEB-INF/views/new-form.jsp");
