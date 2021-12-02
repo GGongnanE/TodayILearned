@@ -24,6 +24,29 @@
 ## IDE
     
 ### IntelliJ 
+
+
+<!-- <details> -->
+<details markdown="1">
+<summary>접기/펼치기 테스트</summary>
+
+<!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+       - 21.12.02
+       : Inline Variable 단축키 : 컨트롤 + 알트 + N
+         (ex) 
+         \`MyView myView = new MyView("/WEB-INF/views/new-form.jsp");  return myView; \`
+            -> return new MyView("/WEB-INF/views/new-form.jsp");
+---
+```
+abcd
+```
+    defg
+\` String abc = new String("abc");\`
+</details>
+
+https://github.com/lazypic/pandoc/blob/master/04_Markdown.md
+
+
     - 21.12.02
        : Inline Variable 단축키 : 컨트롤 + 알트 + N
          (ex) 
