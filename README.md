@@ -48,7 +48,9 @@ https://github.com/lazypic/pandoc/blob/master/04_Markdown.md
 
 
     - 21.12.02
-       : Inline Variable 단축키 : 컨트롤 + 알트 + N
+       1. Inline Variable 단축키 : 컨트롤 + 알트 + N
          (ex) 
          MyView myView = new MyView("/WEB-INF/views/new-form.jsp");  return myView;
             -> return new MyView("/WEB-INF/views/new-form.jsp");
+
+       2. 어떤 로직을 메소드로 빼고 싶을 때 -> 따로 분리할 코드를 블록지정한 후, 컨트롤 + 알트 + M 
