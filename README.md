@@ -1,4 +1,4 @@
-# TodayILearned_GGNE
+# TodayILearned_GGNE(2021.12 ~ 2022)
 
 ## JAVA
     - 21.12.02 
