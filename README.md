@@ -21,7 +21,9 @@
             : 리다이렉트는 실제 클라이언트(웹브라우저)에 응답이 나갔다가 클라이언트가 리다이렉트 경로로 다시 재요청하는 것. 
               따라서 클라이언트가 이를 인지할 수 있고, url 경로도 변경이 된다. 
               포워드는 서버 내부에서 일어나는 호출이기 때문에 클라이언트가 전혀 인지할 수 없다. 
-          
+    - 21.12.06
+        Java RSA 암복호화 시, keyValidException 해결 방법
+        https://coderedirect.com/questions/602282/how-to-read-a-rsa-public-key-file-in-java
 
 ## Git
     - 21.12.02
