@@ -26,6 +26,9 @@
         https://coderedirect.com/questions/602282/how-to-read-a-rsa-public-key-file-in-java
         - JAVA에서 지원하는 형식 : 자바에서 지원하는 RSA PEM 파일 형식이 맞지 않음
           자바는 PKCS#1 지원 안하고, PKCS#8만 지원함 ([출처] JAVA RSA invalid key format 오류|작성자 퍼대기)   -> 근데 출처가 없어서.. 불확실함. 확인 필요 
+    - 21.12.07
+       : JWT.. 어디서 들어본 것 같다... (JSON Web Token) 
+         개요 정리된 글 (https://www.letmecompile.com/api-auth-jwt-jwk-explained/)
 
 
 ## Git
