@@ -94,6 +94,11 @@ https://github.com/lazypic/pandoc/blob/master/04_Markdown.md
 
 
 ## ETC
+<!-- <details> -->
+<details markdown="1">
+<summary>이 일을 하며 내가 느낀 것</summary>
+
+<!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
     - 21.12.09 
        : 인간은 생각보다 강하다. 위기가 닥쳐오면 어떻게해서든 해결해 낸다. (포기하지 않는다는.. 전제하에) 
          그 고통을 이겨냈을 때, 한단계 성장하는 느낌을 받을 수 있다. 나는 그것을 오늘 다시금 깨달았다. 물론.. 여기까지 오는데 너무 짜증났지만.. 그래도 뿌듯하다. 
