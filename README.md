@@ -38,8 +38,11 @@
             -> 이는 복호화 시, 언제 만들어진 데이터인지 알아볼 수 있는 역할도 하고, 암호화 되는 데이터에 대해 약간의 보안성을 더 높이는데 도움이 되는 듯..하다.
     - 21.12.09
        : 1. 암복호화 테스트가 정상적으로 끝났다. 관련된 내용을 취합해 정리해야 한다. 
-         
-
+    - 21.12.10
+       1. 암복호화 공부 필요 
+         (https://yjshin.tistory.com/entry/%EC%95%94%ED%98%B8%ED%95%99-%EB%B9%84%EB%8C%80%EC%B9%AD%ED%82%A4-%EC%95%94%ED%98%B8-RSA-%EC%95%94%ED%98%B8%EC%8B%9C%EC%8A%A4%ED%85%9C)
+       2. oaepparameterspec은 OAEPPadding과 관련이 있었다.
+          https://ko.m.wikipedia.org/wiki/OAEP 
 
 ## Git
     - 21.12.02
