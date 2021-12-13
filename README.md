@@ -43,6 +43,14 @@
        2. oaepparameterspec은 OAEPPadding과 관련이 있었다.
           https://ko.m.wikipedia.org/wiki/OAEP 
 
+    - 21.12.13
+       1. 이걸 자바라고 봐야될지.. 모르겠지만.. 계속 자바 암복호화 관련... 이슈가 있다. 
+          https://celdee.tistory.com/m/228
+          https://www.holaxprogramming.com/2017/06/12/encryption-with-rsa/
+          RSA 알고리즘 방식의 암복호화 시, 공개키를 검증(sign)할 때 사용하는 시그니처라는 개념이 또 등장했다. 공부 필요하다.. (우리 플젝은 fixedPrivateKey라는 이름으로 썼다.)
+       2. AES 알고리즘을 사용하는 암복호화 키에 이상한 garbage data가 섞여있으면 Base64 디코딩을 하지 못하고 IllegalArgumentException이 발생하는 현상이 있다. 
+          ex) input byte array has incorrect ending byte at 44
+
 ## Git
     - 21.12.02
         : gitHub 기준, private Repository에 밤날 커밋한들, 내 자신 외에 타인이 내가 커밋을 했는지 안했는지 알 수가 없다. 
