@@ -50,6 +50,7 @@
           RSA 알고리즘 방식의 암복호화 시, 공개키를 검증(sign)할 때 사용하는 시그니처라는 개념이 또 등장했다. 공부 필요하다.. (우리 플젝은 fixedPrivateKey라는 이름으로 썼다.)
        2. AES 알고리즘을 사용하는 암복호화 키에 이상한 garbage data가 섞여있으면 Base64 디코딩을 하지 못하고 IllegalArgumentException이 발생하는 현상이 있다. 
           ex) input byte array has incorrect ending byte at 44
+       3. java 개발자 사이에서 이슈일만한 사건 발생 -> log4j2에서 보안 취약점 발견 -> log4j2 사용자는 2.15.0 버전으로 업그레이드 필요 
 
 ## Git
     - 21.12.02
