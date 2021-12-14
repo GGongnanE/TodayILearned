@@ -56,7 +56,11 @@
     - 21.12.02
         : gitHub 기준, private Repository에 밤날 커밋한들, 내 자신 외에 타인이 내가 커밋을 했는지 안했는지 알 수가 없다. 
           내 계정으로는 잔디밭이 추가된것 처럼 보이는데, 로그아웃하고 내 계정을 조회해보니 잔디밭이 없어져있다.. 
-
+    - 21.12.14
+        : 음.. 내가 예전에 만들어 놓은 연습용 자바 프로젝트들이 default branch를 master로 사용중이었다.
+          하지만, gitHub는 정책 변경으로 master를 main으로 사용중이라.. Pull request가 되지 않고, 계속 겉도는 상황이라 어쩔 수 없이 master -> main으로 default branch를 변경했다.
+          https://kyeoneee.tistory.com/72
+          위 링크대로 따라하던 중, 오류 발생하여 https://donggu1105.tistory.com/104를 참고 하여 해결 
 
 
 
@@ -64,6 +68,7 @@
     - 21.12.03 
         : 일하던 중 있었던 일이다.. find 명령어에서 symbolic link로 설정한 디렉토리 안의 파일을 찾지 못하는 현상이 있었다. 
           find의 옵션 중 -L 옵션을 주면 심볼릭 링크로 걸려있는 디렉토리 안의 파일을 처리할 수 있었다. 
+      
 
 
 ## Python
