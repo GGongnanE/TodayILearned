@@ -51,7 +51,10 @@
        2. AES 알고리즘을 사용하는 암복호화 키에 이상한 garbage data가 섞여있으면 Base64 디코딩을 하지 못하고 IllegalArgumentException이 발생하는 현상이 있다. 
           ex) input byte array has incorrect ending byte at 44
        3. java 개발자 사이에서 이슈일만한 사건 발생 -> log4j2에서 보안 취약점 발견 -> log4j2 사용자는 2.15.0 버전으로 업그레이드 필요 
-
+    - 21.12.16
+        1. 음.. 고객사 보안팀에서 흥미로운 의견을 제시했다. 
+           - 일반 자바에서 제공하는 암호화 관련 라이브러리보다 apache common crypto를 사용하면 근소하지만 성능 우위가 있다고 함. 
+             https://commons.apache.org/proper/commons-crypto/xref-test/org/apache/commons/crypto/examples 참고 
 ## Git
     - 21.12.02
         : gitHub 기준, private Repository에 밤날 커밋한들, 내 자신 외에 타인이 내가 커밋을 했는지 안했는지 알 수가 없다. 
