@@ -55,6 +55,11 @@
         1. 음.. 고객사 보안팀에서 흥미로운 의견을 제시했다. 
            - 일반 자바에서 제공하는 암호화 관련 라이브러리보다 apache common crypto를 사용하면 근소하지만 성능 우위가 있다고 함. 
              https://commons.apache.org/proper/commons-crypto/xref-test/org/apache/commons/crypto/examples 참고 
+        2. HashMap 사용 시, 동일한 키 값의 데이터를 추가하면 새로운 값의 데이터만 남는다. (기등록된 키를 동일하게 다른 값으로 재등록하면 이전 값이 갱신됨.)
+            ex) map.put(myId, "12345");
+                map.put(asdf, "1111");
+                map.put(asdf, "1234");       // 기존 값이 없어지고 1234가 추가됨. 
+        3. Collections는 각종 타입에 맞게 동기화를 쉽게 할 수 있도록 메소드를 제공하고 있다. 
 ## Git
     - 21.12.02
         : gitHub 기준, private Repository에 밤날 커밋한들, 내 자신 외에 타인이 내가 커밋을 했는지 안했는지 알 수가 없다. 
