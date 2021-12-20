@@ -60,6 +60,11 @@
                 map.put(asdf, "1111");
                 map.put(asdf, "1234");       // 기존 값이 없어지고 1234가 추가됨. 
         3. Collections는 각종 타입에 맞게 동기화를 쉽게 할 수 있도록 메소드를 제공하고 있다. 
+    - 21.12.20
+        1. log4j 관련 이슈 정리 된 유튜브를 보자 
+           (https://www.youtube.com/watch?v=kwS3twdVsko&ab_channel=%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94NomadCoders)
+        2. logback도 1.과 관련되어 보완 패치가 있었던 모양인데.. 그 버전으로 업버전해서 우리 솔루션에 패치를 진행했는데 jboss가 기동하지 않고 오류가 발생했다. 
+           (추후 확인이 필요하다..)
 ## Git
     - 21.12.02
         : gitHub 기준, private Repository에 밤날 커밋한들, 내 자신 외에 타인이 내가 커밋을 했는지 안했는지 알 수가 없다. 
