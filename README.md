@@ -81,7 +81,9 @@
           하지만, gitHub는 정책 변경으로 master를 main으로 사용중이라.. Pull request가 되지 않고, 계속 겉도는 상황이라 어쩔 수 없이 master -> main으로 default branch를 변경했다.
           https://kyeoneee.tistory.com/72
           위 링크대로 따라하던 중, 오류 발생하여 https://donggu1105.tistory.com/104를 참고 하여 해결 
-
+    - 21.12.23 
+        : VSCode에서 gitHub 연동하기. 
+          https://webnautes.tistory.com/1422
 
 
 ## Linux 
