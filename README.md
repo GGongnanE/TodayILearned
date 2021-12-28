@@ -82,7 +82,13 @@
            참고글 
            https://m.blog.naver.com/asemansa/221685008430
            https://xmlangel.github.io/How-Can-I-Use-Jmeter/
-           
+    - 21.12.28
+        1. 중계로그를 파일로 남겨달라는 요건 
+            : 어떤 객체를 json 형태의 String 문자열로 변환해서 그 문자열을 logger로 출력했다. 
+              jackson 라이브러리의 ObjectMapper를 이용했고, logback의 appender 설정을 통해 파일로 남길 수 있다.
+              결과만 확인한것이라 내 뇌피셜이 다분하지만.. 
+              LoggerFactory.getLogger("relay.log")    <--- logback.xml 설정파일에 name="relay.log" 이런식에서 매핑을 해서 사용이 되는듯 하다. 
+              내가 구현한 부분의 상세 코드는 내일 자세히 기록해와야겠다. 아침에 출근하면 그것부터 해야겠네... 
             
 ## Git
     - 21.12.02
