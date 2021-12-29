@@ -89,7 +89,32 @@
               결과만 확인한것이라 내 뇌피셜이 다분하지만.. 
               LoggerFactory.getLogger("relay.log")    <--- logback.xml 설정파일에 name="relay.log" 이런식에서 매핑을 해서 사용이 되는듯 하다. 
               내가 구현한 부분의 상세 코드는 내일 자세히 기록해와야겠다. 아침에 출근하면 그것부터 해야겠네... 
-            
+    - 21.12.29
+        1. logback도 뭔가 취약점이 발견된 듯 하다. 관련해서 보완 패치 필요하다. 
+            현재 프로젝트에서 사용하는 버전은 logback 1.2.3이고, 취약점이 해결되려면 1.2.9버전 이상을 사용해야 한다. 
+            ** 참고 
+            LOGBACK 관련 보안 위협
+            - https://www.boho.or.kr/data/secNoticeView.do?bulletin_writing_sequence=36396&queryString=cGFnZT0xJnNvcnRfY29kZT0mc29ydF9jb2RlX25hbWU9JnNlYXJjaF9zb3J0PXRpdGxlX25hbWUmc2VhcmNoX3dvcmQ9
+            - https://cve.report/CVE-2021-42550
+            - 참고사항 내용중 영어 원문과 다른 부분 (KISA 공지사이트에서 번역이 이상하게 되었네요 . 
+                - JMSAppender가 아니고 JDBCAppender와 비슷하게 구현된 DBAppender입니다. 
+                - https://cve.report/CVE-2021-42550 내의 Reference로 연결된 https://github.com/cn-panda/logbackRceDemo의 텍스트를 보면 logback DBAppender로 나옵니다.
+                        In logback, it is also similar to the Appender of JDBCAppender in log4j1.x —— that is DBAppender
+                        There is an interface called ConnectionSource in DBAppender.
+                        This interface provides a pluggable way to obtain a JDBC connection using the logback class of java.sql.Connection
+                        There are currently three implementation classes: DriverManagerConnectionSource, DataSourceConnectionSource and JNDIConnectionSource.
+            CVE-2021-42550 에 영향 받는 부분
+                - CVE-2021-42550 에 따라 위협에 대한 패치로 logback에서 DBAppender, ConnectionSource 클래스 들을 삭제했습니다. 
+                - 해당 부분에 대한 처리를 한 후 logback 1.2.9 와 같이 패치되어야 합니다. 
+                주로 서비스로그 저장을 위한 Appender 부분에 대한 수정이 발생합니다. 
+                해당 부분에 대하여 프로젝트 마다 사이트 커스터마이징이 존재하면 해당부분에 대한 수정도 필요할 것으로 보입니다. 
+                ex) bxm.dft.logging.logback.DefaultAsyncTableAppender
+                [참고] JMSAPPENDER 관련 보안 위협
+                - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4104
+                - log4j 1.X대도 관련있음. 
+                - JMSAppender 사용하지 않는 경우에는 영향이 없음.
+        
+        
 ## Git
     - 21.12.02
         : gitHub 기준, private Repository에 밤날 커밋한들, 내 자신 외에 타인이 내가 커밋을 했는지 안했는지 알 수가 없다. 
