@@ -14,7 +14,7 @@
 
 
 
-## 지난 
+## 지난
 <!-- <details> -->
 <details markdown="1">
 <summary>2021.12</summary>
