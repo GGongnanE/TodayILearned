@@ -8,6 +8,18 @@
   
 
 ## JAVA
+
+<!-- <details> -->
+<details markdown="1">
+<summary>2022.01</summary>
+
+
+
+<!-- <details> -->
+<details markdown="1">
+<summary>2021.12</summary>
+
+<!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
     - 21.12.02 
       : 간만에 servlet/JSP 공부 중이다. 
         MVC 패턴 -> 서블릿을 컨트롤러, JSP를 뷰로 사용해서 적용 
