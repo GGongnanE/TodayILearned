@@ -17,7 +17,13 @@
     - 22.01.01
         git 기본 복습 중이다. 
         노션 참고 
-
+    - 22.01.02
+        git 강의 이어서 듣고 있는데 gitLab은 여전히 마스터 브랜치를 default로 쓴다. 
+        $ git push origin master
+          remote: HTTP Basic: Access denied
+          fatal: Authentication failed for 'https://gitlab.com/zzlzlzl007/gittest2.git/'
+        push를 못하길래 엑세스 토큰을 만들어서 id,pw에 토큰 넣으니 잘 된다. 
+        https://stackoverflow.com/questions/47860772/gitlab-remote-http-basic-access-denied-and-fatal-authentication
 
 ## OLD
 <!-- <details> -->
