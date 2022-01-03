@@ -25,6 +25,14 @@
           fatal: Authentication failed for 'https://gitlab.com/zzlzlzl007/gittest2.git/'
         push를 못하길래 엑세스 토큰을 만들어서 id,pw에 토큰 넣으니 잘 된다. 
         https://stackoverflow.com/questions/47860772/gitlab-remote-http-basic-access-denied-and-fatal-authentication
+    - 22.01.04
+        git의 default 브랜치 변경하는 방법
+        < 요약 >
+        - git 2.28버전에서부터 default 브랜치를 변경할 수 있는 옵션이 추가되었다. 
+          git config --global init.defaultBranch main으로 init.defaultBranch를 설정한다. 
+          전역 설정으로 지정했으므로 이는 ~/.gitconfig에 아랫부분이 추가된다.(직접 ~/.gitconfig를 수정해도 된다.)
+          그 이후 git 로컬저장소를 초기화한다.
+          (참고) https://blog.outsider.ne.kr/1503
 
 ## OLD
 <!-- <details> -->
