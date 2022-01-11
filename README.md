@@ -20,6 +20,13 @@
     -22.01.06
         1. throw와 throws의 차이.. 알아야함. 
         2. java의 resultSet 공부해야함. 
+    - 22.01.11
+        1. 테이블 락이 걸리면 일반 스프링 기반의 웹서비스 실행 시, SQL(select 제외)문이 수행되지 않을 수 있다. 
+           테이블 락은 직접 락을 거는 것도 가능한데, 오라클의 for update 문을 사용하면 된다. 
+           자바로 넣을지.. SQL로 넣을지 애매~하긴 한데 일단 자바 개발하다가 해본 거라서 여기다 쓴다. 
+           참고 : https://tyrionlife.tistory.com/m/41 
+                  https://lipton.tistory.com/m/entry/%EC%98%A4%EB%9D%BC%ED%81%B4-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%A0%88%EC%BD%94%EB%93%9C-%EB%9D%BD
+           
 
 ## GIT
     - 22.01.01
