@@ -26,8 +26,16 @@
            자바로 넣을지.. SQL로 넣을지 애매~하긴 한데 일단 자바 개발하다가 해본 거라서 여기다 쓴다. 
            참고 : https://tyrionlife.tistory.com/m/41 
                   https://lipton.tistory.com/m/entry/%EC%98%A4%EB%9D%BC%ED%81%B4-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%A0%88%EC%BD%94%EB%93%9C-%EB%9D%BD
-           
-
+    - 22.01.12
+        1. String과 char 활용
+            String str = "abc";
+            str.toUpperCase();
+            char c = 'b';
+            c = Character.toUpperCase(c);
+            // String에서 문자 하나를 읽기 
+            Scanner scan = new Scanner(System.in); 
+            String inputStr = scan.next();
+            char inputChar = scan.next().charAt(0);   // String 문자열 중 0번째 인덱스의 값을 가져온다. 
 ## GIT
     - 22.01.01
         git 기본 복습 중이다. 
