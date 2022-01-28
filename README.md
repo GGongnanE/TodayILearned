@@ -57,6 +57,13 @@
               소나린트에서는 이 복잡도를 15 미만으로 사용할 것을 권장하며 수정하라며 나의 시야를 괴롭힌다. 
               https://coding0.tistory.com/76
               https://www.sonarsource.com/docs/CognitiveComplexity.pdf
+    - 22.01.28
+        1. 자바에서의 캐스팅 
+            - 업캐스팅 : 자식클래스를 부모클래스 타입으로 형변환 하는 것. 
+            - 다운캐스팅 : 부모클래스타입으로 업 캐스팅된 클래스를 다시 자식클래스의 형태를 되돌리는 것. 
+                          때문에 다운캐스팅이 일어나기 위해서는 업캐스팅이 선행되어야 한다. + 명시적으로 타입을 지정해야 한다. 
+            참고 : 1. https://madplay.github.io/post/java-upcasting-and-downcasting
+                   2. https://bgm16.tistory.com/103
         
 
 ## GIT
