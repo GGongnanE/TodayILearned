@@ -70,6 +70,22 @@
             - 프로그래밍 능력 중 중요한 요소 중 하나는 바로 값을 잘 다루는 것. 
                 -> 대충 볼 땐 몰랐는데 2진법, 8진법, 2의 보수법 다시 등장하니 머리가 지끈지끈하다. 내일 보면 좀 나아질까?
             - 자바의 정석 정리 중인 노션 링크 : https://www.notion.so/mickey74/39b4fd4fbd8a4fcfa6c2f2e158609b67
+        3. 자바 문법 정리 
+            - 대소문자 변환 
+                String str = str.toUpperCase();
+                char ch = 'a';
+                ch = Character.toUpperCase(ch);
+            - 배열만들기 (문자배열) -> 문자열 처리 문제들에서 쓰임. (for-each와 혼용)
+                char[] charArr = str.toCharArray();  
+            - 문자 하나를 가져오기 
+                Scanner scan = new Scanner(System.in); 
+                char ch = scan.next().charAt(0);
+            - split / substring (문자열 자르기) 
+                String[] strArr = str.split(" ");
+                // indexOf() : 특정 문자나 문자열이 앞에서부터 찾기 시작해  처음 발견되는 인덱스를 반환
+		        // 해당 조건 값을 찾지 못할 경우 -1을 반환한다.
+		        // lastIndexOf() : indexOf와 유사하나 문자열을 뒤에서부터 찾음.
+                // substring(int x, int y) : x번 인덱스 부터 (y번 인덱스-1)까지 해당되는 문자열을 반환한다.
 ## GIT
     - 22.01.01
         git 기본 복습 중이다. 
