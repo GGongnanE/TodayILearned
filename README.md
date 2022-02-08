@@ -86,6 +86,8 @@
 		        // 해당 조건 값을 찾지 못할 경우 -1을 반환한다.
 		        // lastIndexOf() : indexOf와 유사하나 문자열을 뒤에서부터 찾음.
                 // substring(int x, int y) : x번 인덱스 부터 (y번 인덱스-1)까지 해당되는 문자열을 반환한다.
+	- 22.02.08 
+	   1. syncronized lock?
 ## GIT
     - 22.01.01
         git 기본 복습 중이다. 
