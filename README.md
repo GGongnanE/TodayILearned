@@ -104,6 +104,7 @@
                  https://yangbox.tistory.com/58
                  문자열 처리가 빈번하다면 String 보다는 StringBuilder나 StringBuffer를 고려하는 것이 효과적이고, 다양한 메소드를 제공하고 있다. 
                  문자열을 역순으로 출력하는 것도 간단하게 API 호출만으로 구현할 수 있다. (reverse())
+	   2. 문자열 뒤집기 여러가지 방법 (자바편) https://yangbox.tistory.com/59
 ## GIT
     - 22.01.01
         git 기본 복습 중이다. 
