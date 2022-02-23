@@ -97,6 +97,13 @@
 	   	- 함수형 인터페이스는 추상메소드가 하나만 존재하는 인터페이스이다. 
 		- 만약, 추상메소드가 하나 이상 존재하면 그것은 함수형 인터페이스가 아니다. 
                   (static 메소드나 default 메소드의 존재여부와는 관계 없다. 오로지 추상메소드의 숫자가 중요하다.)
+	- 22.02.23
+	   1. StringBuilder와 StringBuffer의 차이는 무엇일까? 
+	      -> 눈으로 확인해본 가장 간단한 차이는 syncronized 차이에 있었다. 
+                 StringBuffer가 syncronized 방식으로 처리되어, 멀티(다중)스레드 환경에서 유리하다고 한다. 
+                 https://yangbox.tistory.com/58
+                 문자열 처리가 빈번하다면 String 보다는 StringBuilder나 StringBuffer를 고려하는 것이 효과적이고, 다양한 메소드를 제공하고 있다. 
+                 문자열을 역순으로 출력하는 것도 간단하게 API 호출만으로 구현할 수 있다. (reverse())
 ## GIT
     - 22.01.01
         git 기본 복습 중이다. 
